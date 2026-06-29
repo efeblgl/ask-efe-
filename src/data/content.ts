@@ -169,9 +169,8 @@ export interface LinkChip {
 }
 export const verifiedLinks: LinkChip[] = [
   { label: "Website", value: "efebaloglu.com", href: "#" },
-  { label: "LinkedIn", value: "Add LinkedIn URL here", href: "#" },
-  { label: "GitHub", value: "Add GitHub URL here", href: "#" },
-  { label: "AlGel", value: "Add AlGel URL here", href: "#" },
-  { label: "Marmara", value: "Add website URL here", href: "#" },
-  { label: "Email", value: "your-email@example.com", href: "mailto:your-email@example.com" },
+  { label: "LinkedIn", value: "https://www.linkedin.com/in/beraat-efe-baloğlu-02ba46310/", href: "#" },
+  { label: "GitHub", value: "https://github.com/efeblgl", href: "#" },
+  { label: "AlGel", value: "https://www.algelonline.com", href: "#" },
+  { label: "Email", value: "efebaloglu20@gmail.com", href: "mailto:efebaloglu20@gmail.com" },
 ];
