@@ -536,7 +536,8 @@ button, input { font: inherit; }
 
 
 /* ---------- Mobil overflow guard ---------- */
-html, body { overflow-x: hidden; max-width: 100%; }
+html, body { overflow-x: hidden; max-width: 100%; width: 100%; }
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 .card, .skill-card, .service-card, .pipe-card, .case-card, .stack-layer,
 .why-card, .ba-panel, .memory, .demo-wrap, .hero-copy, .side-panel, .cta, .manifesto {
   min-width: 0; max-width: 100%;
@@ -565,7 +566,7 @@ h1, h2, h3, p, span, a { overflow-wrap: break-word; }
   gap: 6px;
   position: sticky;
   top: 0;
-  height: 100dvh;
+  height: 100svh;
   overflow-y: auto;
 }
 .sb-brand { display: flex; align-items: center; gap: 10px; padding: 4px 8px 18px; font-weight: 760; letter-spacing: -0.04em; }
@@ -716,7 +717,9 @@ h1, h2, h3, p, span, a { overflow-wrap: break-word; }
 @media (max-width: 720px) {
   .app-topbar { padding-top: 26px; }
   .console-wrap { padding: 12px; padding-top: 16px; }
-  .console { height: 82dvh; min-height: 500px; border-radius: var(--radius-md); }
+  .console { height: auto; min-height: 0; max-height: none; border-radius: var(--radius-md); }
+  /* mobilde stream'e net yükseklik ver, panel büyüyüp küçülmesin */
+  .console-stream { height: 52vh; max-height: 52vh; }
   .console-head { padding: 12px 14px; gap: 8px; }
   .console-meta { font-size: 11px; gap: 6px; }
   .console-meta .hide-sm { display: none; }
@@ -729,7 +732,7 @@ h1, h2, h3, p, span, a { overflow-wrap: break-word; }
   .quick-row { display: none; }
   .quick-chip { font-size: 12px; padding: 9px 12px; }
   .dock { padding: 12px 14px 14px; }
-  .dock-input input { font-size: 14px; }
+  .dock-input input { font-size: 16px; }
   .core-panel { flex-direction: column; }
   .app-topbar .tb-cta { padding: 7px 11px; font-size: 12px; }
 }
