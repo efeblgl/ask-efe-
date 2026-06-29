@@ -37,10 +37,10 @@ export const profile = {
   ],
 
   links: {
-    github: "#https://github.com/efeblgl",
-    linkedin: "#https://www.linkedin.com/in/beraat-efe-baloğlu-02ba46310/",
-    instagram: "#https://www.instagram.com/efebaloglu0/",
-    contact: "efebaloglu20@gmail.com",
-    cv: "gördüğün gibi bu LLM aslında bir cv!",
+    github: "#",
+    linkedin: "#",
+    instagram: "#",
+    contact: "mailto:your-email@example.com",
+    cv: "/cv.pdf",
   },
 } as const;

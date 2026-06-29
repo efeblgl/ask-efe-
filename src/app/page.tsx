@@ -1,7 +1,8 @@
 import Loader from "@/components/Loader";
 import RevealInit from "@/components/RevealInit";
-import Nav from "@/components/Nav";
-import HeroSection from "@/components/HeroSection";
+import Sidebar from "@/components/Sidebar";
+import TopBar from "@/components/TopBar";
+import ChatConsole from "@/components/ChatConsole";
 import MemorySection from "@/components/MemorySection";
 import ProofSection from "@/components/ProofSection";
 import PipelineSection from "@/components/PipelineSection";
@@ -26,28 +27,33 @@ export default function Home() {
 
       <div className="top-line" />
       <div className="scan-line" />
-      <div className="orb-glow" />
 
-      <div className="page">
-        <Nav />
-        <main>
-          <HeroSection />
-          <MemorySection />
-          <ProofSection />
-          <PipelineSection />
-          <CaseStudiesSection />
-          <AiDemoSection />
-          <ProjectsSection />
-          <StackSection />
-          <ServicesSection />
-          <WhySection />
-          <BeforeAfterSection />
-          <TimelineSection />
-          <Manifesto />
-          <LinksSection />
-          <ContactCTA />
-        </main>
-        <Footer />
+      <div className="app-shell">
+        <Sidebar />
+        <div className="app-main">
+          <TopBar />
+          <div className="console-wrap">
+            <ChatConsole />
+          </div>
+
+          <main>
+            <ProofSection />
+            <ProjectsSection />
+            <PipelineSection />
+            <CaseStudiesSection />
+            <AiDemoSection />
+            <StackSection />
+            <ServicesSection />
+            <MemorySection />
+            <WhySection />
+            <BeforeAfterSection />
+            <TimelineSection />
+            <Manifesto />
+            <LinksSection />
+            <ContactCTA />
+          </main>
+          <Footer />
+        </div>
       </div>
     </>
   );

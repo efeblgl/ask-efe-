@@ -50,7 +50,7 @@ export async function POST(req: NextRequest) {
     }),
   });
 
- if (!upstream.ok || !upstream.body) {
+  if (!upstream.ok || !upstream.body) {
     const errBody = await upstream.text().catch(() => "no body");
     console.error("OpenAI error:", upstream.status, errBody);
     return new Response(JSON.stringify({ error: "upstream_error", detail: errBody }), {
