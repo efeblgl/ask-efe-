@@ -1,0 +1,242 @@
+{
+  "communities": {
+    "0": [
+      "src_components_aidemosection",
+      "src_components_aidemosection_aidemosection",
+      "src_components_beforeaftersection",
+      "src_components_beforeaftersection_beforeaftersection",
+      "src_components_casestudiessection",
+      "src_components_casestudiessection_casestudiessection",
+      "src_components_memorysection",
+      "src_components_memorysection_memorysection",
+      "src_components_pipelinesection",
+      "src_components_pipelinesection_pipelinesection",
+      "src_components_stacksection",
+      "src_components_stacksection_stacksection",
+      "src_components_timelinesection",
+      "src_components_timelinesection_timelinesection",
+      "src_components_whysection",
+      "src_components_whysection_whysection",
+      "src_data_content",
+      "src_data_content_afteritems",
+      "src_data_content_beforeitems",
+      "src_data_content_casestudies",
+      "src_data_content_casestudy",
+      "src_data_content_demooption",
+      "src_data_content_demooptions",
+      "src_data_content_linkchip",
+      "src_data_content_memoryitems",
+      "src_data_content_pipeline",
+      "src_data_content_pipelinestep",
+      "src_data_content_proofcard",
+      "src_data_content_stacklayer",
+      "src_data_content_stacklayers",
+      "src_data_content_timeline",
+      "src_data_content_timelineentry",
+      "src_data_content_whycard",
+      "src_data_content_whycards"
+    ],
+    "1": [
+      "src_app_page",
+      "src_app_page_home",
+      "src_components_contactcta",
+      "src_components_contactcta_contactcta",
+      "src_components_footer",
+      "src_components_footer_footer",
+      "src_components_herosection",
+      "src_components_herosection_herosection",
+      "src_components_herosection_title_words",
+      "src_components_linkssection",
+      "src_components_linkssection_linkssection",
+      "src_components_loader",
+      "src_components_loader_loader",
+      "src_components_manifesto",
+      "src_components_manifesto_manifesto",
+      "src_components_nav",
+      "src_components_nav_nav",
+      "src_components_proofsection",
+      "src_components_proofsection_proofsection",
+      "src_components_revealinit",
+      "src_components_revealinit_revealinit",
+      "src_data_content_proofcards",
+      "src_data_content_verifiedlinks",
+      "src_data_profile",
+      "src_data_profile_profile"
+    ],
+    "2": [
+      "src_app_api_chat_route",
+      "src_app_api_chat_route_chatturn",
+      "src_app_api_chat_route_post",
+      "src_components_projectssection",
+      "src_components_projectssection_projectssection",
+      "src_components_servicessection",
+      "src_components_servicessection_servicessection",
+      "src_data_projects",
+      "src_data_projects_projects",
+      "src_data_services",
+      "src_data_services_services",
+      "src_data_skills",
+      "src_data_skills_skillgroups",
+      "src_lib_systemprompt",
+      "src_lib_systemprompt_projectlist",
+      "src_lib_systemprompt_servicelist",
+      "src_lib_systemprompt_skilllist",
+      "src_types_index",
+      "src_types_index_chatmessage",
+      "src_types_index_project",
+      "src_types_index_role",
+      "src_types_index_service",
+      "src_types_index_skillgroup"
+    ],
+    "3": [
+      "package",
+      "package_dependencies",
+      "package_dependencies_next",
+      "package_dependencies_react",
+      "package_dependencies_react_dom",
+      "package_devdependencies",
+      "package_devdependencies_autoprefixer",
+      "package_devdependencies_postcss",
+      "package_devdependencies_tailwindcss",
+      "package_devdependencies_types_node",
+      "package_devdependencies_types_react",
+      "package_devdependencies_types_react_dom",
+      "package_devdependencies_typescript",
+      "package_name",
+      "package_private",
+      "package_scripts",
+      "package_scripts_build",
+      "package_scripts_dev",
+      "package_scripts_lint",
+      "package_scripts_start",
+      "package_version"
+    ],
+    "4": [
+      "tsconfig",
+      "tsconfig_compileroptions",
+      "tsconfig_compileroptions_allowjs",
+      "tsconfig_compileroptions_esmoduleinterop",
+      "tsconfig_compileroptions_incremental",
+      "tsconfig_compileroptions_isolatedmodules",
+      "tsconfig_compileroptions_jsx",
+      "tsconfig_compileroptions_lib",
+      "tsconfig_compileroptions_module",
+      "tsconfig_compileroptions_moduleresolution",
+      "tsconfig_compileroptions_noemit",
+      "tsconfig_compileroptions_paths",
+      "tsconfig_compileroptions_plugins",
+      "tsconfig_compileroptions_resolvejsonmodule",
+      "tsconfig_compileroptions_skiplibcheck",
+      "tsconfig_compileroptions_strict",
+      "tsconfig_exclude",
+      "tsconfig_include",
+      "tsconfig_paths"
+    ],
+    "5": [
+      "src_components_chatterminal",
+      "src_components_chatterminal_chatterminal",
+      "src_components_chatterminal_uid",
+      "src_data_statusmessages",
+      "src_data_statusmessages_coremessages",
+      "src_data_statusmessages_statusmessages",
+      "src_data_suggestedquestions",
+      "src_data_suggestedquestions_suggestedquestions",
+      "src_lib_chat",
+      "src_lib_chat_chatturn",
+      "src_lib_chat_streambotreply",
+      "src_lib_efebot",
+      "src_lib_efebot_getmockreply",
+      "src_lib_efebot_intent",
+      "src_lib_efebot_intents",
+      "src_lib_efebot_normalize"
+    ],
+    "6": [
+      "src_app_layout",
+      "src_app_layout_inter",
+      "src_app_layout_metadata",
+      "src_app_layout_rootlayout",
+      "src_app_layout_viewport"
+    ],
+    "7": [
+      "next_config",
+      "next_config_nextconfig"
+    ],
+    "8": [
+      "postcss_config",
+      "postcss_config_config"
+    ],
+    "9": [
+      "tailwind_config",
+      "tailwind_config_config"
+    ]
+  },
+  "cohesion": {
+    "0": 0.0748663101604278,
+    "1": 0.13333333333333333,
+    "2": 0.12648221343873517,
+    "3": 0.09523809523809523,
+    "4": 0.10526315789473684,
+    "5": 0.19166666666666668,
+    "6": 0.4,
+    "7": 1.0,
+    "8": 1.0,
+    "9": 1.0
+  },
+  "gods": [
+    {
+      "id": "tsconfig_compileroptions",
+      "label": "compilerOptions",
+      "degree": 15
+    },
+    {
+      "id": "src_data_profile_profile",
+      "label": "profile",
+      "degree": 6
+    },
+    {
+      "id": "package_scripts",
+      "label": "scripts",
+      "degree": 5
+    },
+    {
+      "id": "src_data_projects_projects",
+      "label": "projects",
+      "degree": 3
+    },
+    {
+      "id": "src_data_services_services",
+      "label": "services",
+      "degree": 3
+    },
+    {
+      "id": "src_lib_efebot_getmockreply",
+      "label": "getMockReply()",
+      "degree": 3
+    },
+    {
+      "id": "src_components_chatterminal_uid",
+      "label": "uid()",
+      "degree": 2
+    },
+    {
+      "id": "src_components_chatterminal_chatterminal",
+      "label": "ChatTerminal()",
+      "degree": 2
+    },
+    {
+      "id": "src_components_contactcta_contactcta",
+      "label": "ContactCTA()",
+      "degree": 2
+    },
+    {
+      "id": "src_components_footer_footer",
+      "label": "Footer()",
+      "degree": 2
+    }
+  ],
+  "surprises": [],
+  "tokens": {
+    "input": 0,
+    "output": 0
+  }
+}

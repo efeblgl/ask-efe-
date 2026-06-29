@@ -501,3 +501,368 @@ html, body { overflow-x: hidden; max-width: 100%; }
 }
 h1, h2, h3, p, span, a { overflow-wrap: break-word; }
 .stack-tech, .case-row .v, .memory-item, .link-chip { overflow-wrap: anywhere; }
+
+/* =========================================================
+   CLAUDE MOBILE PATCH — compact hero + large usable chat
+   Desktop layout untouched. Only mobile overrides below.
+   ========================================================= */
+@media (max-width: 720px) {
+  html,
+  body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden !important;
+  }
+
+  .page,
+  main,
+  section,
+  .shell,
+  .hero-grid,
+  .hero-copy,
+  .side-panel,
+  .terminal-body,
+  .chat-preview,
+  .chat-stream {
+    min-width: 0 !important;
+    max-width: 100% !important;
+  }
+
+  /* Hero: telefonda minimum alan kaplasın, chat öne çıksın */
+  .hero {
+    min-height: auto !important;
+    padding: 66px 0 18px !important;
+    align-items: start !important;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr !important;
+    gap: 12px !important;
+    align-items: start !important;
+  }
+
+  .hero-copy {
+    min-height: auto !important;
+    padding: 14px 16px !important;
+    border-radius: 20px !important;
+    justify-content: start !important;
+  }
+
+  .hero-copy::after {
+    display: none !important;
+  }
+
+  .eyebrow,
+  .hero-lead,
+  .llm-strip,
+  .hero-bottom {
+    display: none !important;
+  }
+
+  .hero h1 {
+    font-size: 1.15rem !important;
+    line-height: 1.08 !important;
+    letter-spacing: -0.045em !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+  }
+
+  .hero-actions {
+    margin-top: 10px !important;
+    gap: 7px !important;
+  }
+
+  .hero-actions .btn,
+  .btn {
+    padding: 9px 12px !important;
+    font-size: 12px !important;
+    line-height: 1 !important;
+  }
+
+  /* Chat panel: mobile app gibi büyük ve kullanılabilir */
+  .side-panel {
+    height: 85dvh !important;
+    min-height: 520px !important;
+    max-height: 860px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    border-radius: 22px !important;
+    overflow: hidden !important;
+  }
+
+  .terminal-top {
+    flex-shrink: 0 !important;
+    padding: 11px 13px !important;
+    font-size: 11px !important;
+  }
+
+  .terminal-body {
+    flex: 1 1 auto !important;
+    min-height: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 10px !important;
+    padding: 12px !important;
+    overflow: hidden !important;
+  }
+
+  /* Model core küçülsün, chat alanı büyüsün */
+  .ai-core {
+    flex: 0 0 auto !important;
+    padding: 10px !important;
+    border-radius: 18px !important;
+  }
+
+  .ai-core-head {
+    margin-bottom: 7px !important;
+    font-size: 10px !important;
+  }
+
+  .brain-wrap {
+    height: 94px !important;
+    margin: 0 0 8px !important;
+  }
+
+  .brain-orb {
+    width: 80px !important;
+    height: 80px !important;
+  }
+
+  .ring {
+    width: 118px !important;
+    height: 118px !important;
+  }
+
+  .ring.two {
+    width: 96px !important;
+    height: 96px !important;
+  }
+
+  .node {
+    width: 6px !important;
+    height: 6px !important;
+  }
+
+  .core-stats {
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: 6px !important;
+    margin-top: 8px !important;
+  }
+
+  .core-stats div {
+    padding: 7px !important;
+    border-radius: 10px !important;
+    min-width: 0 !important;
+  }
+
+  .core-stats strong {
+    font-size: 11px !important;
+    margin-bottom: 2px !important;
+  }
+
+  .core-stats span {
+    font-size: 8px !important;
+    letter-spacing: .05em !important;
+  }
+
+  .chat-preview {
+    flex: 1 1 auto !important;
+    min-height: 0 !important;
+    height: auto !important;
+    max-height: none !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 10px !important;
+    padding: 12px !important;
+    border-radius: 18px !important;
+    overflow: hidden !important;
+  }
+
+  .chat-head {
+    flex-shrink: 0 !important;
+    padding-bottom: 8px !important;
+    font-size: 11px !important;
+  }
+
+  .chat-stream {
+    flex: 1 1 auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    overflow-y: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+    gap: 9px !important;
+    padding-right: 4px !important;
+  }
+
+  .msg {
+    max-width: 94% !important;
+    padding: 10px 12px !important;
+    border-radius: 14px !important;
+    font-size: 12.5px !important;
+    line-height: 1.45 !important;
+  }
+
+  .thinking {
+    font-size: 11px !important;
+    padding: 8px 10px !important;
+  }
+
+  .chips {
+    flex-shrink: 0 !important;
+    gap: 6px !important;
+  }
+
+  .chip {
+    font-size: 11px !important;
+    padding: 6px 9px !important;
+  }
+
+  .input-row {
+    flex-shrink: 0 !important;
+    margin-top: 0 !important;
+    gap: 7px !important;
+    padding-top: 2px !important;
+  }
+
+  .input-row input {
+    min-width: 0 !important;
+    padding: 11px 13px !important;
+    font-size: 13px !important;
+  }
+
+  .send-btn {
+    flex: 0 0 40px !important;
+    width: 40px !important;
+    min-width: 40px !important;
+    padding: 0 !important;
+    display: grid !important;
+    place-items: center !important;
+  }
+
+  /* Kartları mobilde daha sıkı tut */
+  .section {
+    padding: 38px 0 !important;
+  }
+
+  .section-head {
+    margin-bottom: 16px !important;
+  }
+
+  .section-kicker {
+    margin-bottom: 8px !important;
+    font-size: 10px !important;
+  }
+
+  .section-title {
+    font-size: clamp(25px, 7.5vw, 34px) !important;
+    line-height: .98 !important;
+  }
+
+  .section-text {
+    margin-top: 10px !important;
+    font-size: 13px !important;
+    line-height: 1.55 !important;
+  }
+
+  .grid {
+    gap: 10px !important;
+  }
+
+  .card,
+  .skill-card,
+  .service-card,
+  .pipe-card,
+  .case-card,
+  .stack-layer,
+  .why-card,
+  .ba-panel,
+  .memory,
+  .demo-wrap,
+  .cta,
+  .manifesto {
+    padding: 16px !important;
+    border-radius: 18px !important;
+  }
+
+  .card,
+  .service-card,
+  .pipe-card,
+  .skill-card {
+    min-height: auto !important;
+  }
+
+  .service-index {
+    margin-bottom: 14px !important;
+  }
+
+  .card h3,
+  .case-card h3,
+  .service-card h3,
+  .skill-card h3,
+  .stack-layer h3 {
+    font-size: 17px !important;
+    line-height: 1.12 !important;
+  }
+
+  .card p,
+  .service-card p,
+  .pipe-card p,
+  .case-row .v,
+  .stack-purpose,
+  .why-card p,
+  .tl-card p,
+  .manifesto p,
+  .cta p {
+    font-size: 13px !important;
+    line-height: 1.5 !important;
+  }
+
+  .case-row {
+    grid-template-columns: 72px 1fr !important;
+    gap: 9px !important;
+  }
+
+  .memory-grid,
+  .projects,
+  .model-stack,
+  .services,
+  .manifesto,
+  .pipeline,
+  .cases,
+  .stack-grid,
+  .ba-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .why-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+
+  .reveal {
+    transform: translateY(12px) scale(.992) !important;
+    transition-duration: .42s !important;
+  }
+}
+
+@media (max-width: 380px) {
+  .side-panel {
+    height: 88dvh !important;
+    min-height: 500px !important;
+  }
+
+  .hero h1 {
+    font-size: 1.05rem !important;
+  }
+
+  .core-stats {
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  }
+
+  .core-stats div {
+    padding: 6px !important;
+  }
+
+  .why-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
